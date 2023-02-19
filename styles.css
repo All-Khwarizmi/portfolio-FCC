@@ -1,0 +1,312 @@
+:root {
+    --red-color: #BE1E34;
+    --gray-black: #393837;
+    --bleu: #4B567B;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    overflow:var(--bleu);
+    
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+.nav-bar {
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--red-color);
+    top:0;
+    position: fixed;
+    color: white;
+    left: 0;
+    z-index: 99;
+    margin-bottom: 1rem;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+.nav-list {
+
+    list-style: none;
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 140px));
+    align-items: center;
+    justify-content: right;
+    
+    margin-right: 2rem;
+    margin-top: 2rem;
+ 
+   
+}
+.nav-link:hover {
+    color: var(--bleu);
+    transform: translateY(10px);
+    transition: 0.2s;
+   
+   
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+  
+}
+
+
+.welcome-section {
+    background-color: #222;
+    width: 100vw;
+    height: calc(100vh - 5rem);
+   position: absolute;
+    color: white;
+    z-index: 0;
+    top :5rem; 
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+   font-family: Montserrat;
+   font-size: 4rem;
+   font-weight: 500;
+   margin-bottom: 0;
+
+}
+.welcome-subtitle {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 200;
+    color: var(--red-color);
+    margin-top: 5px;
+    font-size: 2rem;
+
+}
+.projects-section1 {
+    background-color: 
+    var(--bleu);
+    width: 100vw;
+    height: minmax(180vh, 500vh);
+   position: absolute;
+    color: white;
+    z-index: 0;
+    top: 100vh;
+    left: 0;
+
+}
+.projects-section1:hover {
+   
+
+}
+.projects-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    gap: 2rem 2rem;
+    margin: 0 auto;
+
+}
+h2 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 8rem;
+    
+}
+.projects-img {
+    height : 380px;
+    width: 380px;
+    
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+  
+}
+.project1, .project2 , .project3 {
+
+  
+
+}
+.project4, .project5 , .project6 {
+    margin-bottom: 3rem
+
+  
+
+}
+.img-caption {
+    display: block;
+    background-color: var(--gray-black);
+    color: white;
+    margin-top: 0;
+    border: 0;
+    width: 380px;
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    
+
+}
+
+.project-button-div {
+    display: flex;
+    margin-top: 0rem;
+    background-color: 
+    var(--bleu);
+    width: 100vw;
+    height: 5rem;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.project-button {
+    border: 1px solid var(--gray-black);
+    background-color: var(--gray-black);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    padding: 0.7rem 1rem;
+}
+
+
+.project-button:hover {
+    background-color: var(--red-color);
+    transition-duration: 200ms;
+
+}
+.link-button {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
+    margin: 2rem 0;
+    
+    font-size: 1.4rem;
+}
+
+.contact-section {
+    background-color: var(--gray-black);
+    width: 100vw;
+    height: calc(100vh - 5rem);
+   position: relative;
+    color: white;
+    z-index: 0;
+    left: 0;
+    margin-top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contact-section-title {
+    font-family: Montserrat;
+    text-decoration: none;
+    font-size: 4rem;
+   
+    margin-top: 8rem;
+    margin-bottom: 0.5rem;
+}
+.contact-section-subtitle {
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-style: italic;
+
+
+}
+.profile-div {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: Montserrat;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.icon1 {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+}
+@keyframes icon {
+    from {transform: translateY(0px);}
+   /*  25% {transform: translateY(10px);}
+    50% {transform: translateY(20px);}
+    75% {transform: translateY(30px);} */
+    to {transform: translateY(30px);}
+}
+.icon1:hover {
+    transition: 0.5s;
+    transform: translateY(15px);
+    /* animation-name: icon;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1; */
+}
+.network-name {
+    margin-left: 2.2rem;
+    font-size: 1rem;
+}
+.network-name1 {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.fa-brands, .fa-square-facebook {
+    color: aliceblue;
+    position: absolute;
+}
+.footer {
+  
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: Montserrat;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+
+}
+hr {
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+    width: 100vw;
+    border: solid 2px var(--red-color)
+}
+
+
+@media only screen and (max-width: 420px) {
+    .hero-title {
+      font-size: 4.5rem;
+    }
+  
+  }
